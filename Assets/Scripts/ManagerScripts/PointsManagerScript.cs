@@ -8,7 +8,7 @@ public class PointsManagerScript : MonoBehaviour
     public static TextMeshProUGUI text;
 
     public static int appleAmmout;
-
+    // To Do: Logic for shop itemsAmmount 
 
     private void Awake()
     {
