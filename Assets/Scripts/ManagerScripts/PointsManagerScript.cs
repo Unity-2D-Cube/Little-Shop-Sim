@@ -5,31 +5,65 @@ using TMPro;
 
 public class PointsManagerScript : MonoBehaviour
 {
-    public static TextMeshProUGUI text;
+    public static int appleAmount, blueFlowerAmount, purpleFlowerAmount, yellowFlowerAmount, blueMushroomAmount, purpleMushroomAmount, yellowMushroomAmount;
+    public TextMeshProUGUI applePoints_txt, blueFlower_txt, purpleFlower_txt, yellowFlower_txt, blueMushroom_txt, purpleMushroom_txt, yellowMushroom_txt;
 
-    public static int appleAmmout;
-    // To Do: Logic for shop itemsAmmount 
-
-    private void Awake()
+    private void Start()
     {
-        text = GetComponent<TextMeshProUGUI>();
-
-        appleAmmout = PlayerPrefs.GetInt("Text_Score_Apples", appleAmmout);
-
-        text.text = appleAmmout.ToString();
+        Load();
     }
 
-    private void LateUpdate()
+    public void Update()
     {
-        text.text = appleAmmout.ToString();
+        applePoints_txt.text = appleAmount.ToString();
 
-        text.text = "" + appleAmmout;
+        blueFlower_txt.text = blueFlowerAmount.ToString();
+        purpleFlower_txt.text = purpleFlowerAmount.ToString();
+        yellowFlower_txt.text = yellowFlowerAmount.ToString();
 
-        PlayerPrefs.SetInt("Text_Score_Apples", appleAmmout );
+        blueMushroom_txt.text = blueMushroomAmount.ToString();
+        purpleMushroom_txt.text = purpleMushroomAmount.ToString();
+        yellowMushroom_txt.text = yellowMushroomAmount.ToString();
+
 
     }
 
+    public void BuyBlueFlower(int amount)
+    {
+        appleAmount -= amount;
+        blueFlowerAmount += 10;
+        Save();
+    }
+    public void SubtractScore(int amount)
+    {
 
+        appleAmount -= amount;
+        Save();
+    }
+    public void Save()
+    {
+        PlayerPrefs.SetInt("applePoints", appleAmount);
+
+        PlayerPrefs.SetInt("blueFlowerPoints", blueFlowerAmount);
+        PlayerPrefs.SetInt("purpleFlowerPoints", purpleFlowerAmount);
+        PlayerPrefs.SetInt("yellowFlowerPoints", yellowFlowerAmount);
+
+        PlayerPrefs.SetInt("blueMushroomPoints", blueMushroomAmount);
+        PlayerPrefs.SetInt("purpleMushroomPoints", purpleMushroomAmount);
+        PlayerPrefs.SetInt("yellowleMushroomPoints", yellowMushroomAmount);
+    }
+    public void Load()
+    {
+        appleAmount = PlayerPrefs.GetInt("applePoints");
+
+        blueFlowerAmount = PlayerPrefs.GetInt("blueFlowerPoints");
+        purpleFlowerAmount = PlayerPrefs.GetInt("purpleFlowerPoints");
+        yellowFlowerAmount = PlayerPrefs.GetInt("yellowFlowerPoints");
+
+        blueMushroomAmount = PlayerPrefs.GetInt("blueMushroomPoints");
+        purpleFlowerAmount = PlayerPrefs.GetInt("purpleMushroomPoints");
+        yellowFlowerAmount = PlayerPrefs.GetInt("yellowMushroomPoints");
+    }
 
 
 

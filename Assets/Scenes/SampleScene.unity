@@ -1926,7 +1926,7 @@ GameObject:
   - component: {fileID: 245187382}
   - component: {fileID: 245187381}
   m_Layer: 5
-  m_Name: Mushroom Text (TMP)_7
+  m_Name: Yellow Mushroom_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1950,8 +1950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 227.89001, y: -49.54}
-  m_SizeDelta: {x: 121.58, y: 24.13}
+  m_AnchoredPosition: {x: 228.18, y: -45.2}
+  m_SizeDelta: {x: 120.99, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245187381
 MonoBehaviour:
@@ -1965,6 +1965,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &245187382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2012,14 +2019,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.85
+  m_fontSize: 18.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2048,7 +2055,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 3.872406, y: 0, z: 0, w: 0.000015253855}
+  m_margin: {x: 0.7824326, y: 0, z: 0, w: 0.000015253855}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3039,6 +3046,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1431658172}
+        m_TargetAssemblyTypeName: PointsManagerScript, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4306,7 +4325,7 @@ GameObject:
   - component: {fileID: 502118462}
   - component: {fileID: 502118461}
   m_Layer: 5
-  m_Name: Flower Text (TMP)_4
+  m_Name: Yellow Flower_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4330,8 +4349,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 188.68, y: 47.631958}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 228.18, y: 58.300003}
+  m_SizeDelta: {x: 121, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502118461
 MonoBehaviour:
@@ -4345,6 +4364,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &502118462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4392,7 +4418,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.05
+  m_fontSize: 18.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4910,6 +4936,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1431658172}
+        m_TargetAssemblyTypeName: PointsManagerScript, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &533218374
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,7 +4961,7 @@ GameObject:
   - component: {fileID: 533218377}
   - component: {fileID: 533218376}
   m_Layer: 5
-  m_Name: Flower Items Text (TMP)_2
+  m_Name: Blue Flower_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4947,8 +4985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 188.68, y: 108.15198}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 228.18, y: 106.3}
+  m_SizeDelta: {x: 121, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &533218376
 MonoBehaviour:
@@ -4962,6 +5000,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &533218377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5009,7 +5054,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.05
+  m_fontSize: 18.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5940,8 +5985,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666973394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114, y: -3.8999634, z: 0}
-  m_LocalScale: {x: 253.2, y: 253.2, z: 253.2}
+  m_LocalPosition: {x: 74.5, y: -9.0559845, z: 0}
+  m_LocalScale: {x: 253.20001, y: 253.20001, z: 253.20001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2076828074}
@@ -6230,7 +6275,7 @@ GameObject:
   - component: {fileID: 720203563}
   - component: {fileID: 720203562}
   m_Layer: 5
-  m_Name: Points Text (TMP)_1
+  m_Name: ApplePoints_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6269,6 +6314,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &720203563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7840,7 +7892,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 866442389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1431658172}
+        m_TargetAssemblyTypeName: PointsManagerScript, Assembly-CSharp
+        m_MethodName: BuyBlueFlower
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &866442389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9039,7 +9103,7 @@ GameObject:
   - component: {fileID: 972862729}
   - component: {fileID: 972862728}
   m_Layer: 5
-  m_Name: Mushroom Text (TMP)_5
+  m_Name: Blue Mushroom_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9063,8 +9127,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 188.68, y: 17.84797}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 227.89005, y: 12}
+  m_SizeDelta: {x: 121, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972862728
 MonoBehaviour:
@@ -9078,6 +9142,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &972862729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9125,7 +9196,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.05
+  m_fontSize: 18.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9529,7 +9600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045661339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114, y: -3.8999634, z: 0}
+  m_LocalPosition: {x: 74.5, y: -14.568001, z: 0}
   m_LocalScale: {x: 254.49998, y: 254.49998, z: 254.49998}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -12716,6 +12787,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 1431658170}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!1 &1435775681
 GameObject:
   m_ObjectHideFlags: 0
@@ -13197,7 +13275,7 @@ GameObject:
   - component: {fileID: 1505711185}
   - component: {fileID: 1505711184}
   m_Layer: 5
-  m_Name: Mushroom Text (TMP)_6
+  m_Name: Purple Mushroom_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13221,8 +13299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 188.68, y: -12.480019}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 227.89001, y: -18.7}
+  m_SizeDelta: {x: 121, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1505711184
 MonoBehaviour:
@@ -13236,6 +13314,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &1505711185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13283,7 +13368,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.05
+  m_fontSize: 18.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14341,7 +14426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570562397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114, y: -3.8999634, z: 0}
+  m_LocalPosition: {x: 74.78995, y: 1.9480095, z: 0}
   m_LocalScale: {x: 221.6, y: 221.6, z: 221.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -14854,7 +14939,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713473332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114, y: -3.8999634, z: 0}
+  m_LocalPosition: {x: 74.5, y: -2.047989, z: 0}
   m_LocalScale: {x: 221.6, y: 221.6, z: 221.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -15271,7 +15356,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1758907243}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1431658172}
+        m_TargetAssemblyTypeName: PointsManagerScript, Assembly-CSharp
+        m_MethodName: SubtractScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1758907243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15554,7 +15651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825406126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 114, y: -3.8999634, z: 0}
+  m_LocalPosition: {x: 74.78998, y: 2.3200188, z: 0}
   m_LocalScale: {x: 221.6, y: 221.6, z: 221.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -17060,7 +17157,7 @@ GameObject:
   - component: {fileID: 2076828076}
   - component: {fileID: 2076828075}
   m_Layer: 5
-  m_Name: Flower Text (TMP)_3
+  m_Name: Purple Flower_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17084,8 +17181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 188.68, y: 77.143974}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 228.18, y: 82.3}
+  m_SizeDelta: {x: 121, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076828075
 MonoBehaviour:
@@ -17099,6 +17196,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413719abfce4ad4aab6071a8e8f7825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  applePoints_txt: {fileID: 720203563}
+  blueFlower_txt: {fileID: 533218377}
+  purpleFlower_txt: {fileID: 2076828076}
+  yellowFlower_txt: {fileID: 502118462}
+  blueMushroom_txt: {fileID: 972862729}
+  purpleMushroom_txt: {fileID: 1505711185}
+  yellowMushroom_txt: {fileID: 245187382}
 --- !u!114 &2076828076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17146,7 +17250,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.05
+  m_fontSize: 18.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

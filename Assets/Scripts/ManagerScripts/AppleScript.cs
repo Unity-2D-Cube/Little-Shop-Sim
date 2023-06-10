@@ -20,7 +20,7 @@ public class AppleScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PointsManagerScript.appleAmmout += 10;
+            PointsManagerScript.appleAmount += 10;
             animator.Play("Apple Off");
         }
     }
